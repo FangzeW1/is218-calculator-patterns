@@ -15,23 +15,16 @@ python -m calculator
 Run the full test suite with coverage using:
 python -m pytest --cov=calculator --cov-report=term-missing --cov-fail-under=100
 
-Example conversation
+## Example conversation
+
+```text
 > add 5 3
 8.0
 > subtract 10 4
 6.0
-> multiply 2.5 4
-10.0
-> divide 9 3
-3.0
-> divide 5 0
-Cannot divide by zero
-> history
-add 5 3 = 8.0
-subtract 10 4 = 6.0
-multiply 2.5 4 = 10.0
-divide 9 3 = 3.0
+...
 > exit
+```
 
 Static, class, and instance methods:
 The methods in Operations, such as Operations.add(), are static methods because they only use the values passed into them and do not need self or cls.
